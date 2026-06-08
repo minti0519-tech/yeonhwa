@@ -9,15 +9,16 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* 2열 유지 */
     gap: 30px;
-    max-width: 1000px;
+    max-width: 1400px;   /* 기존 1000px에서 1400px로 대폭 확장 */
     margin: 0 auto;
+    padding: 0 20px;     /* 좌우 여백 확보 */
 }
 
 .item {
     background: #1e1e1e;
-    padding: 20px;
+    padding: 25px;       /* 카드 내부 공간 조절 */
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.5);
     transition: transform 0.3s;
@@ -30,16 +31,17 @@ body {
 h3 {
     color: #ffffff;
     margin-top: 0;
+    margin-bottom: 15px; /* 제목과 프레임 사이 간격 */
 }
 
 iframe {
-    width: 100%; 
-    height: 60vh;          /* 화면 높이의 60% 사용 */
-    min-height: 400px;     /* 최소 높이 보장 */
+    width: 100%;         /* 부모(item)의 가로폭을 100% 사용 */
+    height: 60vh; 
+    min-height: 400px;
     border: none; 
     border-radius: 10px;
     background-color: #000000;
-    overflow: hidden;      /* 스크롤바 방지 */
+    overflow: hidden;
     display: block;
 }
 
@@ -50,4 +52,5 @@ h1 {
 
 p {
     color: #b0b0b0; 
+    margin-bottom: 30px;
 }
