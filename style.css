@@ -36,7 +36,7 @@ h3 {
 
 iframe {
     width: 100%;         /* 부모(item)의 가로폭을 100% 사용 */
-    height: 60vh; 
+    height: 40vh; 
     min-height: 400px;
     border: none; 
     border-radius: 10px;
